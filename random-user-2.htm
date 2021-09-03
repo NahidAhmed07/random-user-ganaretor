@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./random-user-2.css">
+    <!-- bootstrap link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+</head>
+<body class="container py-5">
+    
+<div  class="" onclick="radio()">
+    <p>Select  Your Custom user : </p>
+    <input type="radio" id="male" name="gender"  value="male">
+    <label for="male">Male</label><br>
+
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br>
+
+    <input type="radio" id="both" name="gender" checked value="both">
+    <label for="both">Both</label><br>
+</div>
+<a class="btn btn-outline-secondary" href="./index.html"> Visit Single User</a>
+
+<div class="spinner-parent">
+      <div class="spinner"></div>
+    </div>
+    
+
+    <section>
+        <div class="user-parent">
+        </div>
+    </section>
+    <button class="user-btn" onclick="loadUser()" >load More User</button>
+
+
+    <div id="modal">
+        <div id="modal-body">
+            
+        </div>
+    </div>
+    
+
+
+
+    <script src="./random-user-2.js"></script>
+</body>
+</html>

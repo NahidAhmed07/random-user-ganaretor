@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random User</title>
+    <!-- bootstrap link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!-- font awesome link  -->
+    <script src="https://kit.fontawesome.com/acea1fdaa1.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./random-user-1.css">
+
+</head>
+<body class="bg-info">
+
+    <header>
+        <h1 class="text-center my-3">See All Random Users</h1>
+    </header>
+
+    <section class="container">
+        <div class="w-50 mx-auto rounded">
+            <div class="card mb-3  py-4">
+                <img id="user-img" src="" style="width: 150px; height: 150px;" class="card-img-top img-fluid rounded-circle mx-auto" alt="...">
+                <div class="card-body mb-3 text-center">
+                    <p class="card-text fs-4 " id="user-title"></p>
+                    <h2 class="card-title" id="user-header" ></h2>
+                    
+                </div>
+                <div id="icon-parent" class="d-flex w-75 mx-auto justify-content-between mb-3">
+                     <div id="user" class="icon" >
+                        <i class="far fa-2x fa-user"></i>
+                    </div>
+                    <div id="email" class="icon">
+                        <i class="far fa-2x fa-envelope"></i>
+                    </div>
+                    <div id="date" onmouseover="setDate('${user.dob.date}')"  class="icon">
+                        <i class="far fa-2x fa-calendar-alt"></i>
+                    </div>
+                    <div id="map" onmouseover="setMap('${addr}')" class="icon">
+                        <i class="fas fa-2x fa-map-marked-alt"></i>
+                    </div>
+                    <div id="phone" onmouseover="setPhone('${user.phone}')" class="icon">
+                        <i class="fas fa-2x fa-phone"></i>
+                    </div>
+                    <div id="password" onmouseover="setPassword('${user.login.password}')" class="icon">
+                        <i class="fas fa-2x fa-lock"></i>
+                    </div>
+
+                </div>
+            </div>
+
+            <button id="next-btn" class="btn btn-primary"> Next</button>
+
+            <a class="btn btn-outline-primary" href="./random-user-2.htm">Visit all user </a>
+
+        </div>
+
+    </section>
+
+    
+
+
+    <script src="./random-user-1.js"></script>
+</body>
+</html>

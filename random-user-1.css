@@ -1,0 +1,19 @@
+
+.icon{
+    background: #cfcfcf;
+    padding:10px 20px;
+    border-radius: 5px;
+    color: #01c753;
+    transition: 0.3s;
+    
+}
+.icon:hover{
+    background: #01c753;
+    color: #cfcfcf;
+}
+
+.icon:first-child{
+    background: #01c753;
+    color: #cfcfcf;
+}
+
